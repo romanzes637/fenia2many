@@ -1,0 +1,54 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+                                   OpenFENIA                                     
+\*---------------------------------------------------------------------------*/
+FeniaFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+6
+(
+    NY
+    {
+        type            patch;
+        nFaces          120;
+        startFace       21000;
+    }
+    NZ
+    {
+        type            patch;
+        nFaces          360;
+        startFace       21120;
+    }
+    NX
+    {
+        type            patch;
+        nFaces          120;
+        startFace       21480;
+    }
+    X
+    {
+        type            patch;
+        nFaces          120;
+        startFace       21600;
+    }
+    Y
+    {
+        type            patch;
+        nFaces          120;
+        startFace       21720;
+    }
+    Z
+    {
+        type            patch;
+        nFaces          360;
+        startFace       21840;
+    }
+)
+
+// ************************************************************************* //

@@ -1,0 +1,63 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+\*---------------------------------------------------------------------------*/
+FeniaFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      feSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    T
+    {
+        KSP          CG;
+//        KSP          BICG;
+//        KSP          GMRES;
+        rtol        2.0e-05;
+        atol        1.0e-15;
+        dtol        100000;
+         maxIters      10000;
+        PC          ICC;
+    }
+    U
+    {
+//        SNES         TR;
+        SNES         LS;
+        nlatol      1.4e0;
+        nlrtol      1.0e-5;
+        nlsol       1.0e-6;
+        maxNl       150;
+        
+        LSTYPE       BT;
+        lsOrd         3;
+        alpha         1.e-3;
+        lsMin         0.005;
+        damping         1.0;
+        lsMaxIt         2;
+
+
+//        KSP          default;
+        KSP          CG;
+//        KSP          BICG;
+//        KSP          GMRES;
+        rtol        2.0e-08;
+        atol        1.0e-16;
+        dtol        100000;
+         maxIters      450000;
+        PC          ICC;
+    }
+    
+IntegrationFactors
+{
+    equations
+    {
+        T      1.0 ; //1.0 ; //  0.66666;
+    }
+}
+
+
+// ************************************************************************* //

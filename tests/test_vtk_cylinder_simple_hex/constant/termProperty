@@ -1,0 +1,62 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+\*---------------------------------------------------------------------------*/
+FeniaFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+    noZone
+    {
+		matType constProp;
+		DT              (4.5 4.5 4.5);
+		rho             9507.0;
+		cHeat           240.0;
+    }
+
+    RW  // https://en.wikipedia.org/wiki/Borosilicate_glass
+    {
+        matType constPropTSource;  
+	DT                (1.2 1.2 1.2);
+	rho               2230;
+	cHeat             830;
+
+	xIn       -10;
+	xStep     260;
+	xDel      0;
+	qW        50000; // 37638.12; //9378.1; //37.95;
+	tau       -1364904924;  // 31536000 s/year // 946080000 30 years
+	tStep     0;
+	inTime    0;
+    }
+
+    V // 12Õ18Í10Ò https://dpva.ru/Guide/GuideMatherials/Metalls/CastIron/MechanicalPhysicalGGG70/
+    {
+        matType constProp; 
+	DT              (46.0 46.0 46.0);
+	rho             7200.0;
+	cHeat           540; // google
+    }
+
+//    Steel // https://www.nerjstal.ru/markistali/otechestvennye/nerzhaveyushchaya-stal-12h18n10t/
+//   {
+//        matType constProp; 
+//	DT              (16.0 16.0 16.0);  // 100C
+//	rho             7920.0;  // google
+//	cHeat           462;  // 100C
+//    }
+
+//    EBS  // https://www.researchgate.net/figure/Mechanical-and-thermal-properties-of-the-mortar-specimen-and-Kyeongju-bentonite_tbl1_289574424
+//    {
+//        matType constProp; 
+//	DT              (1.5 1.5 1.5);  // Mortar
+//	rho             1900.0;  // Mortar
+//	cHeat           960;  // Mortar
+//    }
+
+
+// ************************************************************************* //

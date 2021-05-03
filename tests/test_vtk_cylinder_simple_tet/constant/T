@@ -1,0 +1,42 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+\*---------------------------------------------------------------------------*/
+FeniaFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      condition;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+    
+    External
+    {
+        type            convectionFlux;
+        TRef            25.0;
+        heatTrans       10;   
+//        type            timeValueTr;
+//        timeValueTr constant           300;
+//        type            fixedValue;
+//        value           1750;
+//        type            fixedFlux;
+//        fluxValue           -130000;
+    }
+
+
+    Bottom
+    {
+        type            convectionFlux;
+        TRef            25.0;
+        heatTrans       10;
+    }    
+
+
+    Top
+    {
+        type            convectionFlux;
+        TRef            25.0;
+        heatTrans       10;    
+    }
+
+// ************************************************************************* //
