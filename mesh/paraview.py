@@ -1,4 +1,3 @@
-from .fenia import FeniaMesh
 import time
 import numpy as np
 import sys
@@ -7,6 +6,8 @@ import xml.etree.ElementTree as ET
 import shutil
 import vtk
 from vtk.util import numpy_support
+
+from mesh.fenia import FeniaMesh
 
 
 class ParaViewMesh(FeniaMesh):

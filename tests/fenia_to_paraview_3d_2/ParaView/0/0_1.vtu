@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<VTKFile type="UnstructuredGrid" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <UnstructuredGrid>
+    <Piece NumberOfPoints="27"                   NumberOfCells="8"                   >
+      <PointData>
+        <DataArray type="Float32" Name="T" format="appended" RangeMin="9"                    RangeMax="9"                    offset="0"                   />
+        <DataArray type="Int64" IdType="1" Name="vtkOriginalPointIds" format="appended" RangeMin="1"                    RangeMax="44"                   offset="44"                  />
+      </PointData>
+      <CellData>
+        <DataArray type="Int64" IdType="1" Name="vtkOriginalCellIds" format="appended" RangeMin="8"                    RangeMax="15"                   offset="152"                 />
+      </CellData>
+      <Points>
+        <DataArray type="Float32" Name="Points" NumberOfComponents="3" format="appended" RangeMin="0.10000000149"        RangeMax="0.24494897793"        offset="216"                 />
+      </Points>
+      <Cells>
+        <DataArray type="Int64" Name="connectivity" format="appended" RangeMin=""                     RangeMax=""                     offset="360"                 />
+        <DataArray type="Int64" Name="offsets" format="appended" RangeMin=""                     RangeMax=""                     offset="540"                 />
+        <DataArray type="UInt8" Name="types" format="appended" RangeMin=""                     RangeMax=""                     offset="604"                 />
+      </Cells>
+    </Piece>
+  </UnstructuredGrid>
+  <AppendedData encoding="base64">
+   _AQAAAACAAABsAAAADwAAAA==eJxjYBBwZKATBgDG8giMAQAAAACAAADYAAAAPwAAAA==eJwtxckKQFAAAEAUWerlQvZ3sSX//30OZi6TJr/MuQuXrly7cXDrzr0Hj548e/HqzdG7D5++fPvx6w+7sAJuAQAAAACAAABAAAAAHgAAAA==eJzjYIAATijNBaW5oTQPlOaF0nxQmh9KAwAL4ABdAQAAAACAAABEAQAAWQAAAA==eJxljtERgDAMQl2jw9gJWFBnanayXsJBtF8peRBirfOoF3uO+nP+a5jiMbVLnUz3o83kytd29zU++cm/Oj1kdCszyHjP3LEPjIF5dVd9YLzne59kHpeCjpA=AQAAAACAAAAAAgAAcwAAAA==eJx1kDkSg0AMBDHYgM19eM3y/4c6YDpgqqSkE80hpeKaU/yJH7EXs/gu7tOKR+BTiZOYzJ/9XexMT+4oPqwHuiXogV9pffFfxa/p6PkUB+vDX8ibAx/uri0v2f4mcg96cl8if8i2z/2N+eET9fwDRrQETQ==AQAAAACAAABAAAAAHgAAAA==eJzjYIAAASgtAaUVoLQGlDaA0hZQ2gFKAwAeQAEhAQAAAACAAAAIAAAACwAAAA==eJzj4YEAAAG4AGE=
+  </AppendedData>
+</VTKFile>

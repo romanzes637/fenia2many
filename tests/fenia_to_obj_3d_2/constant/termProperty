@@ -1,0 +1,41 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+    noZone
+    {
+		matType constProp;
+		DT              (2.91 2.91 2.91);
+		rho             2700.0;
+		cHeat           840;
+    }
+
+    Internal1
+    {
+		matType constProp;
+		DT              (2.91 2.91 2.91);
+		rho             2700.0;
+		cHeat           840;
+		volSource table
+        2
+		(
+	    (0     		    93.7502)
+        (86400000000	93.7502)
+		);
+	}
+
+
+// ************************************************************************* //

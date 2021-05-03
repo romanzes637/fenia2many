@@ -4,13 +4,13 @@ import sys
 import time
 import logging
 
-from ..object.cell_zones import CellZones
-from ..object.faces import Faces
-from ..object.field import Field
-from ..object.cells import Cells
-from ..object.face_zones import FaceZones
-from ..object.points import Points
-from ..object.dictionary import Dictionary
+from object.cell_zones import CellZones
+from object.faces import Faces
+from object.field import Field
+from object.cells import Cells
+from object.face_zones import FaceZones
+from object.points import Points
+from object.dictionary import Dictionary
 
 
 class FeniaMesh:

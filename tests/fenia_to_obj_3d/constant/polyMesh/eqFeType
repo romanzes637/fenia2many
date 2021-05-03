@@ -1,0 +1,18 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       wordListList; //wordList;  //labelListCompactList; //labelListList;  //labelListCompactList
+    location    "constant/polyMesh";
+    object      faces;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+2
+(
+3(U M1 g)
+2(T M2)
+)
+
+
+// ************************************************************************* //

@@ -1,0 +1,57 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.1.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		2.0;
+	format		ascii;
+	class		dictionary;
+	location	"system";
+	object		feSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+	dUt
+	{
+//		SNES		TR;
+		SNES		LS;
+		nlatol		1.0e-10;
+		nlrtol		1.0e-4;
+		nlsol		1.0e-10;
+		maxNl		150;
+		
+		LSTYPE		BT;
+		lsOrd		3;
+		alpha		1.0e-4;
+		lsMin		0.005;
+		damping		1.0;
+		lsMaxIt		2;
+
+//		KSP			default;
+		KSP			CG;
+//		KSP			BICG;
+//		KSP			GMRES;
+		rtol		1.0e-4;
+		atol		1.0e-10;
+		dtol		100000;
+		maxIters	450000;
+		PC			MG;
+	}
+}
+
+IntegrationFactors
+{
+	equations
+	{
+		dUt	1.0;
+//		dUt	0.66666;
+	}
+}
+
+// ************************************************************************* //

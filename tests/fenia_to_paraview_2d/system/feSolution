@@ -1,0 +1,41 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+                                   OpenFEM                                     
+\*---------------------------------------------------------------------------*/
+FemFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      feSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+	T
+	{
+//		SNES		TR;
+//		KSP			default;
+		KSP			CG;
+//		KSP			BICG;
+//		KSP			GMRES;
+		rtol		1.0e-15;
+		atol		1.0e-15;
+		dtol		1.0e+06;
+		maxIters	5000;
+		PC			ICC;
+	}
+}
+
+
+IntegrationFactors
+{
+	equations
+	{
+		U	1.0;
+		T	1.0;
+	}
+}
+
+// ************************************************************************* //

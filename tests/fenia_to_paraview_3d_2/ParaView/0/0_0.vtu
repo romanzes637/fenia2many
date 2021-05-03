@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<VTKFile type="UnstructuredGrid" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <UnstructuredGrid>
+    <Piece NumberOfPoints="27"                   NumberOfCells="8"                   >
+      <PointData>
+        <DataArray type="Float32" Name="T" format="appended" RangeMin="9"                    RangeMax="9"                    offset="0"                   />
+        <DataArray type="Int64" IdType="1" Name="vtkOriginalPointIds" format="appended" RangeMin="0"                    RangeMax="43"                   offset="44"                  />
+      </PointData>
+      <CellData>
+        <DataArray type="Int64" IdType="1" Name="vtkOriginalCellIds" format="appended" RangeMin="0"                    RangeMax="7"                    offset="152"                 />
+      </CellData>
+      <Points>
+        <DataArray type="Float32" Name="Points" NumberOfComponents="3" format="appended" RangeMin="0"                    RangeMax="0.17320508334"        offset="216"                 />
+      </Points>
+      <Cells>
+        <DataArray type="Int64" Name="connectivity" format="appended" RangeMin=""                     RangeMax=""                     offset="328"                 />
+        <DataArray type="Int64" Name="offsets" format="appended" RangeMin=""                     RangeMax=""                     offset="504"                 />
+        <DataArray type="UInt8" Name="types" format="appended" RangeMin=""                     RangeMax=""                     offset="568"                 />
+      </Cells>
+    </Piece>
+  </UnstructuredGrid>
+  <AppendedData encoding="base64">
+   _AQAAAACAAABsAAAADwAAAA==eJxjYBBwZKATBgDG8giMAQAAAACAAADYAAAAPQAAAA==eJwtxScSgDAAALCyDWUPW0BwHP//H4LEJIRf5tyFS1eu3bh1dOfeg0dPnr149ebdyYdPX779+PUHhqgB8A==AQAAAACAAABAAAAAHgAAAA==eJxjYIAARijNBKWZoTQLlGaF0mxQmh1KAwAC4AAdAQAAAACAAABEAQAAQgAAAA==eJxjYECAs2fO2CKz0fnocugYmzoI7QNV44OmByGOaq4Pij6EeQhxBjSArBbVHmSzfeAYm3nI8ujuwy4HwQBDR4CtAQAAAACAAAAAAgAAcAAAAA==eJx1kLcRgEAMBB/vvXmg/0IJuA3QjJRsojNSDN884i4O4iae4ihmYi9ejk8qrmI0/uwf4mT05M7hP/RAtzg98EtMX/wb8TY6euZibfrwF/Jax4e7C5MXzX4ncg96ciuRP9DD5pci/8DHy3kBaDwETQ==AQAAAACAAABAAAAAHgAAAA==eJzjYIAAASgtAaUVoLQGlDaA0hZQ2gFKAwAeQAEhAQAAAACAAAAIAAAACwAAAA==eJzj4YEAAAG4AGE=
+  </AppendedData>
+</VTKFile>

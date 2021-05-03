@@ -1,10 +1,9 @@
 import os
-import sys
 import time
 import logging
 import argparse
 
-from fenia.mesh.paraview import ParaViewMesh
+from mesh.paraview import ParaViewMesh
 
 if __name__ == '__main__':
     print("Working directory: {}".format(os.getcwd()))

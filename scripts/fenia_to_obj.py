@@ -2,9 +2,9 @@ import os
 import sys
 import time
 
-from fenia.connection import fenia_to_obj
-from fenia.mesh.fenia import FeniaMesh
-from fenia.obj import ObjMesh
+from connection import fenia_to_obj
+from mesh.fenia import FeniaMesh
+from obj import ObjMesh
 
 print("Working directory: {}".format(os.getcwd()))
 
