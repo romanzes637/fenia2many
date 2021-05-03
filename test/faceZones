@@ -1,0 +1,119 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+                                  OpenFENIA                                    
+\*---------------------------------------------------------------------------*/
+FeniaFile
+{
+    version     2.0;
+    format      ascii;
+    class       regIOobject;
+    location    "";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+7
+(
+NZ
+{
+type faceZone;
+faceLabels List<label>
+8
+(
+28
+29
+30
+31
+32
+33
+34
+35
+);
+}
+
+NY
+{
+type faceZone;
+faceLabels List<label>
+8
+(
+36
+37
+38
+39
+40
+41
+42
+43
+);
+}
+
+NX
+{
+type faceZone;
+faceLabels List<label>
+4
+(
+44
+45
+46
+47
+);
+}
+
+Y
+{
+type faceZone;
+faceLabels List<label>
+8
+(
+48
+49
+50
+51
+52
+53
+54
+55
+);
+}
+
+X
+{
+type faceZone;
+faceLabels List<label>
+4
+(
+56
+57
+58
+59
+);
+}
+
+IN
+{
+type faceZone;
+faceLabels List<label>
+0
+(
+);
+}
+
+Z
+{
+type faceZone;
+faceLabels List<label>
+8
+(
+60
+61
+62
+63
+64
+65
+66
+67
+);
+}
+
+)
+// ************************************************************************* //
