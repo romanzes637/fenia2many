@@ -171,7 +171,10 @@ class Cells(BaseObject):
                 n_points = faces_data[i]
                 faces_points.append(faces_data[i+1:i+1+n_points])
                 i += n_points + 1
-            n_cells = len(set(owner_data[1:]))
+            owner_cells = set(owner_data[1:])
+            neighbour_cells = set(neighbour_data[1:])
+            all_cells = owner_cells.union(neighbour_cells)
+            n_cells = len(all_cells)
             logging.info(f'{time.perf_counter() - t0}s')
             logging.info('Evaluating cells faces')
             t0 = time.perf_counter()
